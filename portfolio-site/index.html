@@ -115,19 +115,45 @@
       </div>
       <div class="project-grid">
         <article class="project-card reveal" data-project="dustbin">
-          <div class="project-symbol"><i></i><b></b><em></em></div>
+          <div class="project-symbol dustbin-mark" aria-hidden="true">
+            <span class="bin-body"></span>
+            <span class="bin-lid"></span>
+            <span class="compressor"></span>
+            <span class="signal s1"></span>
+            <span class="signal s2"></span>
+            <span class="sensor-dot"></span>
+          </div>
           <div><span>Product Development</span><h3>Smart Compressible Waste Management System</h3><p>Solar-powered compression, IoT monitoring, fill alerts, GPS location, and fire detection.</p></div>
         </article>
         <article class="project-card reveal" data-project="gearbox">
-          <div class="project-symbol gearbox-mark"><i></i><b></b><em></em></div>
+          <div class="project-symbol gearbox-mark" aria-hidden="true">
+            <span class="gear g1"></span>
+            <span class="gear g2"></span>
+            <span class="shaft"></span>
+            <span class="housing"></span>
+            <span class="torque-line"></span>
+          </div>
           <div><span>Mechanical Assembly</span><h3>Compact Multi-Stage Helical Gearbox</h3><p>Integrated gear, shaft, bearing, and housing design for compact power transmission.</p></div>
         </article>
         <article class="project-card reveal" data-project="cad">
-          <div class="project-symbol cad-mark"><i></i><b></b><em></em></div>
+          <div class="project-symbol cad-mark" aria-hidden="true">
+            <span class="cube c1"></span>
+            <span class="cube c2"></span>
+            <span class="wire w1"></span>
+            <span class="wire w2"></span>
+            <span class="node n1"></span>
+            <span class="node n2"></span>
+          </div>
           <div><span>CAD Modeling</span><h3>3D CAD Models & Product Concepts</h3><p>Surface modeling, product forms, mechanical parts, and presentation-ready CAD outputs.</p></div>
         </article>
         <article class="project-card reveal" data-project="drawings">
-          <div class="project-symbol drawing-mark"><i></i><b></b><em></em></div>
+          <div class="project-symbol drawing-mark" aria-hidden="true">
+            <span class="sheet"></span>
+            <span class="dim dim-a"></span>
+            <span class="dim dim-b"></span>
+            <span class="part-outline"></span>
+            <span class="callout"></span>
+          </div>
           <div><span>Documentation</span><h3>2D Drafting & Technical Drawings</h3><p>Drawing conversion, manufacturing documentation, detailing, and production communication.</p></div>
         </article>
       </div>
@@ -206,7 +232,9 @@
     <div class="modal-backdrop" data-close></div>
     <article class="modal-card">
       <button class="modal-close" type="button" data-close aria-label="Close project details">×</button>
-      <div class="modal-visual" id="modalVisual"><span></span><span></span><span></span></div>
+      <div class="modal-visual" id="modalVisual" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
       <div class="modal-content">
         <p class="eyebrow" id="modalType"></p>
         <h2 id="modalTitle"></h2>

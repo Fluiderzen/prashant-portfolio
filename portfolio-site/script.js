@@ -81,6 +81,7 @@ const counterObserver = new IntersectionObserver((entries) => {
 counters.forEach((counter) => counterObserver.observe(counter));
 
 const modal = document.getElementById("projectModal");
+const modalVisual = document.getElementById("modalVisual");
 const modalType = document.getElementById("modalType");
 const modalTitle = document.getElementById("modalTitle");
 const modalChallenge = document.getElementById("modalChallenge");
@@ -91,6 +92,7 @@ const modalTools = document.getElementById("modalTools");
 document.querySelectorAll(".project-card").forEach((card) => {
   card.addEventListener("click", () => {
     const project = projects[card.dataset.project];
+    modalVisual.dataset.visual = card.dataset.project;
     modalType.textContent = project.type;
     modalTitle.textContent = project.title;
     modalChallenge.textContent = project.challenge;
